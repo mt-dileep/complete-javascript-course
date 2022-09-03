@@ -1,0 +1,13 @@
+<textarea id="area" style="width: 80%; height: 60px">
+    Selecting in this text updates values below.
+    </textarea
+>
+<br />
+From <input id="from" disabled /> – To <input id="to" disabled />
+
+<script>
+  area.onselect = function () {
+    from.value = area.selectionStart;
+    to.value = area.selectionEnd;
+  };
+</script>
